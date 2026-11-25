@@ -3,6 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useAcademyData } from '@/lib/useAcademyData';
+import { INITIAL_CMS } from '@/data/mock/academyData';
 import {
   LayoutDashboard,
   Users,
@@ -46,6 +48,7 @@ interface AdminSidebarProps {
 
 export function AdminSidebar({ mobileOpen = false, onCloseMobile }: AdminSidebarProps) {
   const pathname = usePathname();
+  const [cms] = useAcademyData('cms', INITIAL_CMS);
 
   React.useEffect(() => {
     if (mobileOpen) {
@@ -69,11 +72,11 @@ export function AdminSidebar({ mobileOpen = false, onCloseMobile }: AdminSidebar
             </svg>
           </div>
           <div>
-            <span className="font-extrabold tracking-wider text-base text-white block">
-              KABADDI <span className="text-[#FF6B1A]">ACADEMY</span>
+            <span className="font-extrabold tracking-wider text-sm text-white block uppercase truncate max-w-[150px]">
+              {cms.academyName}
             </span>
-            <span className="text-[9px] uppercase tracking-wider text-[#AAB2BD] font-semibold block">
-              ADMIN CONTROL PANEL
+            <span className="text-[9px] uppercase tracking-wider text-[#FF6B1A] font-bold block">
+              MANAGEMENT PORTAL
             </span>
           </div>
         </Link>

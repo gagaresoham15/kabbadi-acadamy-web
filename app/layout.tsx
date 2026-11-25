@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ToastProvider } from '@/components/ui/Toast';
+import { ThemeProvider } from '@/lib/ThemeContext';
 
 export const metadata: Metadata = {
-  title: 'KABADDI ACADEMY | Train Hard. Play Smart. Win Together.',
-  description: 'Professional Kabaddi Academy Management System - Comprehensive training programs, expert coaches, tournaments and elite player development.',
+  title: 'GARUDA KABADDI ACADEMY | Dominate the Mat. Unleash the Warrior.',
+  description: 'India premier high-performance Kabaddi & Sports Science Academy. Olympic synthetic mats, NIS certified master coaches, and biomechanics video analysis.',
 };
 
 export default function RootLayout({
@@ -13,11 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-[#080D14] text-white min-h-screen selection:bg-[#FF6B1A] selection:text-white">
-        <ToastProvider>
-          {children}
-        </ToastProvider>
+    <html lang="en" className="dark">
+      <body className="bg-[#080D14] text-white min-h-screen selection:bg-[#FF6B1A] selection:text-white transition-colors duration-300">
+        <ThemeProvider>
+          <ToastProvider>
+            {children}
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

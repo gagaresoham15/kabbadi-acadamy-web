@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -86,3 +87,119 @@
 .border-orange-subtle {
   border-color: rgba(255, 107, 26, 0.25);
 }
+
+/* ========================================================================= */
+/* LIGHT THEME COMPREHENSIVE OVERRIDES (Warm Athletic Arena Canvas) */
+/* ========================================================================= */
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #F7F5F0 !important;
+  color: #0A0E17 !important;
+}
+
+/* Page and Section Backgrounds */
+html.light .bg-\[\#080D14\] {
+  background-color: #F7F5F0 !important;
+}
+html.light .bg-\[\#05080E\] {
+  background-color: #080D14 !important;
+  color: #FFFFFF !important;
+}
+html.light .bg-\[\#0B121C\] {
+  background-color: #EFECE6 !important;
+}
+html.light .bg-\[\#101C2C\] {
+  background-color: #E4E0D6 !important;
+}
+html.light .bg-\[\#101C2C\]\/60 {
+  background-color: rgba(228, 224, 214, 0.7) !important;
+}
+html.light .bg-\[\#101C2C\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+html.light .bg-\[\#171F2B\] {
+  background-color: #FFFFFF !important;
+  border-color: rgba(255, 107, 26, 0.16) !important;
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.07), 0 2px 6px -1px rgba(15, 23, 42, 0.04) !important;
+}
+html.light .bg-\[\#171F2B\]\/90 {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  border-color: rgba(255, 107, 26, 0.2) !important;
+  box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.1) !important;
+}
+html.light .bg-\[\#252F3D\] {
+  background-color: #EDE9E0 !important;
+}
+html.light header.bg-\[\#080D14\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: rgba(255, 107, 26, 0.2) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Text Colors */
+html.light .text-white {
+  color: #0A0E17 !important;
+}
+html.light .text-white\/90 {
+  color: #1A2232 !important;
+}
+html.light .text-white\/80 {
+  color: #2D3748 !important;
+}
+html.light .text-\[\#AAB2BD\] {
+  color: #5A6679 !important;
+}
+
+/* Protected Text Inside Orange Elements or Badges */
+html.light .bg-\[\#FF6B1A\] .text-white,
+html.light .bg-\[\#FF6B1A\] *,
+html.light .bg-gradient-to-r .text-white,
+html.light .bg-gradient-to-r *,
+html.light .bg-gradient-to-tr .text-white,
+html.light .bg-gradient-to-tr *,
+html.light .bg-gradient-to-br .text-white,
+html.light .bg-gradient-to-br *,
+html.light button.bg-\[\#FF6B1A\],
+html.light .bg-\[\#05080E\] .text-white,
+html.light .bg-\[\#05080E\] * {
+  color: #FFFFFF !important;
+}
+
+/* Preserved Sports Orange Accents */
+html.light .text-\[\#FF6B1A\] {
+  color: #EA580C !important;
+}
+html.light .text-\[\#FF8A25\] {
+  color: #D97706 !important;
+}
+
+/* Borders */
+html.light .border-white\/5,
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Inputs, Textareas, & Selects */
+html.light input,
+html.light select,
+html.light textarea {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Modals & Dialogs */
+html.light .bg-\[\#101C2C\] {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+

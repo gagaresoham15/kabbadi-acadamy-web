@@ -36,7 +36,27 @@ const config: Config = {
       boxShadow: {
         glow: "0 0 25px rgba(255, 107, 26, 0.35)",
         glowSm: "0 0 12px rgba(255, 107, 26, 0.25)",
+        glowLg: "0 0 40px rgba(255, 107, 26, 0.45)",
         card: "0 10px 30px -10px rgba(0, 0, 0, 0.5)",
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+          '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
+      animation: {
+        float: 'float 5s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
+        shimmer: 'shimmer 2.5s linear infinite',
       },
     },
   },

@@ -21,7 +21,7 @@ const WEEK_SCHEDULE: Record<string, Array<{ time: string; title: string; categor
       category: 'Advanced Tactics',
       mat: 'Main Court (Synthetic)',
       coach: 'Coach Rohit Sharma',
-      focus: 'Escaping corner ankle holds and rapid recovery to midline'
+      focus: 'Escaping corner ankle holds and rapid recovery to center line'
     }
   ],
   Tue: [

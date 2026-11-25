@@ -150,3 +150,29 @@ export interface Notice {
   targetRole: 'all' | 'player' | 'coach';
   important?: boolean;
 }
+
+export interface CMSData {
+  academyName: string;
+  tagline: string;
+  heroHeadline: string;
+  heroSubhead: string;
+  heroDescription: string;
+  announcementTicker: string;
+  academyPhone: string;
+  academyEmail: string;
+  academyAddress: string;
+  statStudents: string;
+  statCoaches: string;
+  statTrophies: string;
+  statPklDrafts: string;
+}
+
+export interface FacilityItem {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  features: string[];
+  image: string;
+}
+
